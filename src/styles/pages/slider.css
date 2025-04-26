@@ -1,0 +1,37 @@
+.services-slider {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60dvh;
+    z-index: 1;
+    padding: 0;
+    background: url('../../img/bg-slider.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.services-slider::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: grayscale(1);
+    z-index: -1;
+}
+
+.services-slider::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.9) 15%, rgba(0, 0, 0, 0.3) 65%, rgba(255, 255, 255, 0) 100%);
+    z-index: -1;
+}

@@ -1,24 +1,110 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head> <!-- Cabeçalho do site -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VG – Estética Automotiva</title>
 
     <!-- Importando CSS -->
-     <link rel="stylesheet" href="src/styles/fonts.css">
-     <link rel="stylesheet" href="src/styles/reset.css">
-     <link rel="stylesheet" href="src/styles/index.css">
-     <link rel="stylesheet" href="src/styles/responsive.css">
+    <link rel="stylesheet" href="src/styles/resets/fonts.css">
+    <link rel="stylesheet" href="src/styles/resets/reset.css">
+    <link rel="stylesheet" href="src/styles/pages/main.css">
+    <link rel="stylesheet" href="src/styles/pages/about.css">
+    <link rel="stylesheet" href="src/styles/pages/services.css">
+    <link rel="stylesheet" href="src/styles/pages/slider.css">
+    <link rel="stylesheet" href="src/styles/pages/contact.css">
+    <link rel="stylesheet" href="src/styles/resets/responsive.css">
 
-     <!-- Ícone do site -->
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- Ícone do site -->
+    <link rel="shortcut icon" href="./src/img/vg-logo.png" type="image/x-icon">
+
+    <!-- Importando FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 
 <body> <!-- Corpo do projeto -->
-    
 
 
+    <main class="main"> <!-- Main do projeto -->
+        <div class="container">
+
+            <div class="left-fade-in">
+                <h1 class="container-left-title">Bem vindo à</h1>
+                <h2 class="container-title">VG <span>Estética Automotiva</span></h2>
+            </div>
+            <div class="bottom-fade-in">
+                <a href="#contact">Entre em contato
+                    <img src="./src/img/whatsapp-logo.png" alt="Logo WhatsApp">
+                </a>
+            </div>
+
+        </div>
+    </main>
+
+    <section class="about"> <!-- Seção sobre nós -->
+        <div class="container fade-in">
+            <img src="./src/img/vg-logo.png" alt="Logo VG Estética Automotiva">
+
+            <p class="container-text">Na VG Estética Automotiva, transformamos o visual do seu carro com excelência.
+                Utilizamos produtos premium, equipamentos modernos e técnicas avançadas para garantir resultados
+                impecáveis. Nossa equipe é comprometida com os detalhes e focada em entregar qualidade em cada serviço.
+
+                É a estética automotiva levada a sério — <strong>para valorizar seu veículo, independente da
+                    marca.</strong></p>
+        </div>
+    </section>
+
+    <section class="services"> <!-- Seção de serviços -->
+        <div class="container">
+            <h1 class="container-title fade-in">Nossos <span>Serviços</span></h1>
+            <div class="services-content">
+                <div class="services-card fade-in">
+                    <img src="./src/img/cleaning.png" alt="">
+                    <h2>Higienização Interna</h2>
+                    <p>Limpeza completa do interior do veículo, incluindo estofados, tapetes e painel.</p>
+                </div>
+                <div class="services-card fade-in">
+                    <img src="./src/img/polishing.png" alt="Polimento">
+                    <h2>Polimento</h2>
+                    <p>Restauração da pintura do carro, removendo riscos e manchas.</p>
+                </div>
+                <div class="services-card fade-in">
+                    <img src="./src/img/encerament.png" alt="Enceramento">
+                    <h2>Enceramento</h2>
+                    <p>Tratamento com cera para proteger a pintura contra desgastes naturais.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services-slider">
+        <div class="container">
+
+        </div>
+    </section>
+
+    <section class="contact"> <!-- Seção de contato -->
+        <div class="container">
+
+            <h1 class="container-title">Faça seu <span>orçamento</span></h1>
+            <p>Entre em contato conosco para saber mais sobre nossos serviços e preços.</p>
+            <div class="social-media">
+                <a href="https://www.instagram.com/vg_esteticaautomotiva016/" target="_blank"><i
+                        class="fa-brands fa-instagram"></i></a>
+                <a href="https://wa.me/5516997349790" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+
+            </div>
+    </section>
+
+
+    <div class="wp-float right-fade-in">
+        <a href="https://wa.me/5516997349790" target="_blank">
+            <!-- Width e Height definidos na tag momentaneamente -->
+            <img src="./src/img/whatsapp-logo.png" alt="Logo WhatsApp" class="wp-float-img" width="50px" height="50px">
+        </a>
+    </div>
 
 
 
@@ -26,8 +112,10 @@
 
 
     <!-- Importando Javascript -->
-     <script src="src/js/script.js"></script>
+    <script src="src/js/script.js"></script>
     <!-- Importando Components -->
-     <script src="src/components/scrollreveal.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="src/components/scrollreveal.js"></script>
 </body>
+
 </html>

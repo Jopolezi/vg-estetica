@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100dvh;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    background: #666;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    padding: 0 4%;
+    height: 100%;
+    width: 100%;
+}
+
+
+/* Botão do Whatsapp no canto inferior direito da tela */
+.wp-float {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 12px;
+    z-index: 9999;
+}
+
+
+.wp-float img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    transition: all 0.1s ease-in-out;
+}
+
+.wp-float img:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}

@@ -21,7 +21,3 @@ Este projeto é uma landing page desenvolvida para apresentar os serviços da **
 ***
 
 ## O projeto ainda não está disponível na versão web
-
-
-
-
