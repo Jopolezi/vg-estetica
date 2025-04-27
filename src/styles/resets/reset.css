@@ -13,6 +13,7 @@ body {
     font-family: 'Poppins', sans-serif;
     color: #fff;
     background: #666;
+    overflow-x: hidden;
 }
 
 html {
@@ -31,15 +32,14 @@ a {
     width: 100%;
 }
 
-
-/* Botão do Whatsapp no canto inferior direito da tela */
 .wp-float {
     display: flex;
     position: fixed;
     bottom: 0;
     right: 0;
     margin: 12px;
-    z-index: 9999;
+    z-index: 99;
+    transition: opacity 0.3s ease-in-out;
 }
 
 

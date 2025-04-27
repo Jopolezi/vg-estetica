@@ -9,11 +9,11 @@
     <!-- Importando CSS -->
     <link rel="stylesheet" href="src/styles/resets/fonts.css">
     <link rel="stylesheet" href="src/styles/resets/reset.css">
-    <link rel="stylesheet" href="src/styles/pages/main.css">
-    <link rel="stylesheet" href="src/styles/pages/about.css">
-    <link rel="stylesheet" href="src/styles/pages/services.css">
-    <link rel="stylesheet" href="src/styles/pages/slider.css">
-    <link rel="stylesheet" href="src/styles/pages/contact.css">
+    <link rel="stylesheet" href="src/styles/page/main.css">
+    <link rel="stylesheet" href="src/styles/page/about.css">
+    <link rel="stylesheet" href="src/styles/page/services.css">
+    <link rel="stylesheet" href="src/styles/page/contact.css">
+    <link rel="stylesheet" href="src/styles/page/footer.css">
     <link rel="stylesheet" href="src/styles/resets/responsive.css">
 
     <!-- Ícone do site -->
@@ -30,13 +30,11 @@
     <main class="main"> <!-- Main do projeto -->
         <div class="container">
 
-            <div class="left-fade-in">
-                <h1 class="container-left-title">Bem vindo à</h1>
-                <h2 class="container-title">VG <span>Estética Automotiva</span></h2>
-            </div>
+            <h1 class="container-main-title left-fade-in">Bem vindo à</h1>
+            <h2 class="container-main-title left-fade-in">VG <span>Estética Automotiva</span></h2>
+
             <div class="bottom-fade-in">
                 <a href="#contact">Entre em contato
-                    <img src="./src/img/whatsapp-logo.png" alt="Logo WhatsApp">
                 </a>
             </div>
 
@@ -44,10 +42,11 @@
     </main>
 
     <section class="about"> <!-- Seção sobre nós -->
-        <div class="container fade-in">
-            <img src="./src/img/vg-logo.png" alt="Logo VG Estética Automotiva">
+        <div class="container ">
+            <img class="fade-in" src="./src/img/vg-logo.png" alt="Logo VG Estética Automotiva">
 
-            <p class="container-text">Na VG Estética Automotiva, transformamos o visual do seu carro com excelência.
+            <p class="container-text fade-in">Na VG Estética Automotiva, transformamos o visual do seu carro com
+                excelência.
                 Utilizamos produtos premium, equipamentos modernos e técnicas avançadas para garantir resultados
                 impecáveis. Nossa equipe é comprometida com os detalhes e focada em entregar qualidade em cada serviço.
 
@@ -58,51 +57,137 @@
 
     <section class="services"> <!-- Seção de serviços -->
         <div class="container">
-            <h1 class="container-title fade-in">Nossos <span>Serviços</span></h1>
-            <div class="services-content">
-                <div class="services-card fade-in">
-                    <img src="./src/img/cleaning.png" alt="">
-                    <h2>Higienização Interna</h2>
-                    <p>Limpeza completa do interior do veículo, incluindo estofados, tapetes e painel.</p>
+            <h1 class="container-title fade-in">Nossos <span>serviços</span></h1>
+
+            <div class="container-content">
+                <div class="card left-fade-in">
+                    <h2>Lavagem <span>Simples</span></h2>
+                    <div class="container-p">
+                        <p><span>✔</span> Lavagem com shampoo</p>
+                        <p><span>✔</span> Aspiração Interna</p>
+                        <p><span>✔</span> Limpeza interna de plásticos</p>
+                        <p><span>✔</span> Lavagem de rodas</p>
+                        <p><span>✔</span> Lavagem da caixa de rodas</p>
+                        <p><span>✔</span> Aplicação de pretinho</p>
+                    </div>
+                    <a href="#contact">Faça o seu orçamento</a>
                 </div>
-                <div class="services-card fade-in">
-                    <img src="./src/img/polishing.png" alt="Polimento">
-                    <h2>Polimento</h2>
-                    <p>Restauração da pintura do carro, removendo riscos e manchas.</p>
+
+                <div class="card right-fade-in">
+                    <h2>Lavagem <span>Detalhada</span></h2>
+                    <div class="container-p">
+                        <p><span>✔</span> Pré-lavagem</p>
+                        <p><span>✔</span> Lavagem Simples <span>+</span></p>
+                        <p><span>✔</span> Revitalização de plásticos</p>
+                        <p><span>✔</span> Enceramento</p>
+                        <p><span>✔</span> Limpeza de vidros</p>
+                        <p><span>✔</span> Polimento de farol</p>
+                    </div>
+                    <a href="#contact">Faça o seu orçamento</a>
                 </div>
-                <div class="services-card fade-in">
-                    <img src="./src/img/encerament.png" alt="Enceramento">
-                    <h2>Enceramento</h2>
-                    <p>Tratamento com cera para proteger a pintura contra desgastes naturais.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="services-slider">
-        <div class="container">
-
-        </div>
-    </section>
-
-    <section class="contact"> <!-- Seção de contato -->
-        <div class="container">
-
-            <h1 class="container-title">Faça seu <span>orçamento</span></h1>
-            <p>Entre em contato conosco para saber mais sobre nossos serviços e preços.</p>
-            <div class="social-media">
-                <a href="https://www.instagram.com/vg_esteticaautomotiva016/" target="_blank"><i
-                        class="fa-brands fa-instagram"></i></a>
-                <a href="https://wa.me/5516997349790" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
 
             </div>
+            
+            <h2 class="container-title fade-in">Antes e <span>Depois</span></h2>
+
+            <div class="container-video">
+                <video controls disablepictureinpicture controlslist="nodownload noplaybackrate nofullscreen"
+                    preload="metadata" poster="./src/img/thumb.jpg">
+                    <source src="./src/videos/vg_estetica.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+
+           
+
+                
+                <div class="container-right">
+                    
+                </div>
+
+
     </section>
+
+    <section class="contact" id="contact"> <!-- Seção de contato -->
+
+        <div class="container">
+
+
+            <div class="container-left left-fade-in">
+
+                <div class="container-text">
+                    <h1 class="container-left-title">Faça seu <span>orçamento</span></h1>
+
+                    <p class="container-left-subtitle">Entre em contato conosco para saber mais sobre nossos serviços e
+                        preços e <strong>garantir a melhor lavagem detalhada da cidade</strong>.</p>
+                </div>
+
+                <div class="location">
+                    <p> Av. Rubi, 60 - Jardim 2000, Itápolis</p>
+                    <p> WhatsApp: (16) 99734-9790</p>
+                    <div class="flex">
+                        <a href="https://www.instagram.com/vg_esteticaautomotiva016/"><i
+                                class="fa-brands fa-instagram"></i> vg_esteticaautomotiva016</a>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="container-right">
+                <form class="form fade-in" id="WhatsAppForm">
+                    <div class="input-container">
+                        <label for="name">Nome<span>*</span></label>
+                        <input type="text" id="name" name="name" placeholder="Digite seu nome"
+                            pattern="[A-Za-zÀ-ÖØ-öø-ÿ\s]+" title="Apenas letras são permitidas" required>
+                    </div>
+
+                    <div class="input-container">
+                        <label for="number">Número<span>*</span></label>
+                        <input type="tel" id="number" name="number" placeholder="Digite seu número" pattern="[0-9]+"
+                            title="Apenas números são permitidos" maxlength="11" required>
+                    </div>
+
+                    <div class="input-container">
+                        <label for="services">Selecione o serviço<span>*</span></label>
+                        <select id="services-list" name="services" required>
+                            <option value="" disabled selected>Selecione o serviço</option>
+                            <option value="lavagem simples">Lavagem Simples</option>
+                            <option value="lavagem detalhada">Lavagem Detalhada</option>
+                            <option value="outro">Outro</option>
+                        </select>
+                    </div>
+
+                    <div class="input-container">
+                        <label for="captcha">(2 + 5 = ?)<span>*</span></label>
+                        <input type="text" id="captcha" name="captcha" placeholder="Verificação" required>
+                    </div>
+
+                    <button type="submit" class="form-button">Faça o seu orçamento</button>
+                </form>
+
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <footer class="footer"> <!-- Footer -->
+
+        <div class="container fade-in">
+
+
+            <p class="footer-text">VG Estética Automotiva &copy; 2025 - Todos os direitos reservados.</p>
+            <p class="footer-text">Desenvolvido por <a href="https://github.com/Jopolezi" target="_blank">João
+                    Polezi</a> <i class="fa-solid fa-code"></i></p>
+    </footer>
 
 
     <div class="wp-float right-fade-in">
-        <a href="https://wa.me/5516997349790" target="_blank">
-            <!-- Width e Height definidos na tag momentaneamente -->
-            <img src="./src/img/whatsapp-logo.png" alt="Logo WhatsApp" class="wp-float-img" width="50px" height="50px">
+        <a href="#contact">
+            <img src="./src/img/whatsapp-logo.png" alt="Logo WhatsApp" class="wp-float-img">
         </a>
     </div>
 
